@@ -18,5 +18,19 @@ int main(void){
 	printf("   25.0 a 29.9 | Sobrepeso\n");
 	printf("	  >=30 | Obesidad\n");
 
+	//agregado para el TP N°4:
+
+	printf("\nSu condicion actual de peso es: ");
+
+	if (IMC >= 30){
+			printf("\nObesidad");
+		}else if (IMC >= 25 && IMC < 30){
+			printf("\nSobrepeso");
+		}else if (IMC >= 18.5 && IMC < 25){
+			printf("\nNormal");
+		}else if (IMC < 18.5){
+			printf("\nBajo peso");
+		};
+
 	return 0;
 }
