@@ -1,11 +1,26 @@
 #include <stdio.h>
 int main(void){
 	float Peso = 0, IMC = 0, Altura = 0;
+	
+//modificacion del TP N°5
+	do{
+		printf("\nIngresar peso (Kg): ");
+		scanf("%f", &Peso);
 
-	printf("Ingresar peso (Kg): ");
-	scanf("%f", &Peso);
-	printf("Ingresar altura (m): ");
-	scanf("%f", &Altura);
+		if (Peso < 0)
+		printf("\nPeso incorrecto, ingresar de nuevo");
+	} while (Peso < 0);
+
+	do{
+		printf("\nIngresar altura (m): ");
+		scanf("%f", &Altura);
+
+		if (Altura < 0)
+		printf("\nAltura incorrecta, ingresar de nuevo");
+	} while (Altura < 0);
+
+
+	
 
 	IMC = Peso / (Altura * Altura);
 
